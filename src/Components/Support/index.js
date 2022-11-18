@@ -8,15 +8,8 @@ const Support = () => {
     <div className='footer'>
         
         <a href='https://paypal.me/edriecruz?country.x=PH&locale.x=en_US'>
-        <p>
-        Support the Developer
-        </p>
-            <FontAwesomeIcon icon={faPaypal} size="2xl" 
-        style={{
-            "transition": "ease .2s",
-            "margin-bottom": "20px"
-        }}/></a>
-        
+            <FontAwesomeIcon icon={faPaypal} size="2xl" className='paypal'/>
+        </a>
     </div>
   )
 }
