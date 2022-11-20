@@ -7,7 +7,7 @@ const Support = () => {
   return (
     <div className='footer'>
         
-        <a href='https://paypal.me/edriecruz?country.x=PH&locale.x=en_US'>
+        <a href='https://paypal.me/edriecruz?country.x=PH&locale.x=en_US' target="_blank" rel='noopenner noreferrer'>
             <FontAwesomeIcon icon={faPaypal} size="2xl" className='paypal'/>
         </a>
     </div>

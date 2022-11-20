@@ -5,15 +5,16 @@
     flex-direction: column;
     justify-content:space-around;
     align-items: center;
-    top:100px;
     background: #606060;
     padding: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     @include App.xs {
         margin: 20px 5px 0px 5px;
+        top: 80px;
     }
     @include App.m {
         margin: 20px 60px 0px 60px;
+        top:100px;
     }
 
     .text{
@@ -29,7 +30,7 @@
             font-family:'Montserrat', sans-serif;
             
             @include App.xs {
-                font-size: 30px;
+                font-size: 20px;
             }
             @include App.m {
                 font-size: 50px;
@@ -67,6 +68,12 @@
                 }
     
                 li{
+                    @include App.xs {
+                    margin-top: -5px;
+                }
+                @include App.m {
+                    margin-top: 0;
+                }
                     a{
                         text-decoration: none;
                         transition: ease .5s;
@@ -116,6 +123,12 @@
                 }
     
                 li{
+                    @include App.xs {
+                        margin-top: -5px;
+                    }
+                    @include App.m {
+                        margin-top: 0;
+                    }
                     a{
                         transition: ease .5s;
                         text-decoration: none;
@@ -148,7 +161,7 @@
         border: #e9e9e9 5px solid;
         display: flex;
         @include App.xs {
-            height: 280px;
+            height: 180px;
         }
         @include App.m {
             height: 320px;
@@ -181,13 +194,14 @@
         button{
             transition: ease .5s;
             padding: 10px;
-            margin: 10px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.2);
             @include App.xs{
                 width: 140px;
+                margin: 5px;
             }
             @include App.m{
                 width: 165px;
+                margin: 10px;
             }
 
             &:hover{
