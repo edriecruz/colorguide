@@ -1,6 +1,16 @@
+@use '/src/App.scss';
+
 .container{
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    height: calc(100vh - 20px);
     width: calc(100% - 20px);
     background: #c0c0c0;
+
+    @include App.xs {   
+        height: 100vh;
+    }
+    @include App.m {
+        height: calc(100vh - 20px);
+    }
 }
