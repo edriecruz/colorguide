@@ -5,12 +5,15 @@ const Magic = () => {
     
   const [color, setColor] = useState("black");
   const [backgroundcolor, setBackgroundColor] = useState("white");
+  const [colortext, setColorText] = useState("");
+  const [backgroundcolortext, setBackgroundColorText] = useState("");
 
 
   return (
     <div className='magic'>
       
         <div className="text">
+          <p>{backgroundcolortext}</p>
             <p 
             style={{
               color: color,
@@ -19,6 +22,7 @@ const Magic = () => {
             }}
             contentEditable="true"
             >Change Text...</p>
+          <p></p>
         </div>
 
         <div className='jump-to'>
@@ -63,7 +67,7 @@ const Magic = () => {
 
                     {/* red button */}
                     <button 
-                    onClick={() => setBackgroundColor("red")}
+                    onClick={() => setBackgroundColor("red") && setBackgroundColorText("Red")}
                     style={{
                       "border": "red 3px solid"
                     }}>Red<br/>#FF0000</button>
@@ -324,7 +328,7 @@ const Magic = () => {
 
                     {/* wheat button */}
                     <button 
-                    onClick={() => setBackgroundColor("salmon")}
+                    onClick={() => setBackgroundColor("wheat")}
                     style={{
                       "border": "wheat 2px solid"
                     }}>Wheat<br/>#F5DEB3</button> 
