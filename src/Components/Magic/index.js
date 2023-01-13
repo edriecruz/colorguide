@@ -5,7 +5,6 @@ const Magic = () => {
     
   const [color, setColor] = useState("black");
   const [backgroundcolor, setBackgroundColor] = useState("white");
-  const [colortext, setColorText] = useState("");
   const [backgroundcolortext, setBackgroundColorText] = useState("");
 
 

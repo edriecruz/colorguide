@@ -1,17 +1,21 @@
 @use 'sass:math';
+@use '/src/App.scss';
 
-.logo-area{
-    width: 100%;
-    text-align: center;
-
-    .logo{
-        width: 100px;
-        margin-top: 10px;
-    }
+    .logo-area{
+        width: 100%;
+        text-align: center;
     
-    .logo-title{
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 100;
-        margin-top: 0;
+        .logo{
+            width: 100px;
+            margin-top: 10px;
+        }
+        
+        .logo-title{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 100;
+            margin-top: 0;
+            @include App.xs{
+                font-size: 20px;
+            }
+        }
     }
-}

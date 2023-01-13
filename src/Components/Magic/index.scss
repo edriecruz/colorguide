@@ -1,6 +1,5 @@
 @use '/src/App.scss';
 .magic {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content:space-around;
@@ -9,12 +8,10 @@
     padding: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     @include App.xs {
-        margin: 20px 5px 0px 5px;
-        top: 80px;
+        margin: 0px 5px 0px 5px;
     }
     @include App.m {
-        margin: 20px 60px 0px 60px;
-        top:80px;
+        margin: 0px 60px 0px 60px;
     }
 
     .text{
@@ -41,7 +38,7 @@
         width: 100%;
 
         .jump-to-bg{
-            width: 50%;
+            width: 70%;
             p{
                 text-align: center;
                 font-family: 'Montserrat', sans-serif;
@@ -92,7 +89,7 @@
             }
         }
         .jump-to-font{
-            width: 50%;
+            width: 70%;
             p{
                 text-align: center;
                 font-family: 'Montserrat', sans-serif;

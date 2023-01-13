@@ -3,14 +3,8 @@
 .container{
     display: flex;
     flex-direction: column;
-    position: absolute;
-    width: calc(100% - 20px);
+    justify-content: center;
+    align-items: center;
     background: #c0c0c0;
-
-    @include App.xs {   
-        height: 100vh;
-    }
-    @include App.m {
         height: calc(100vh - 20px);
-    }
 }
