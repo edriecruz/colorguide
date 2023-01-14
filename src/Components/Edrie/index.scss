@@ -1,0 +1,16 @@
+@use '/src/App.scss';
+
+.Edrie-Logo{
+    position: absolute;
+    bottom: 0;
+    
+
+    img{
+        @include App.xs{
+            width: 60px;
+        }
+        @include App.m{
+            width: 100px;
+        }
+    }
+}
